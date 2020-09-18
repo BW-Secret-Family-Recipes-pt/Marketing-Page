@@ -76,19 +76,105 @@ font-family: 'Satisfy', cursive;
 */
 
 * {
-    background: #FA7D09;
-    font-family: 'Montserrat', sans-serif;
+
+	font-family: 'Montserrat', sans-serif;
+	/* border: .0625em solid black; */
+	
 }
 
-nav {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
+html {
+	font-size: 62.5%;
+
+}
+
+header {
+	display: flex;
+}
+
+.header-container {
+	flex-flow: row wrap;
+	width: 70%;
+	
+}
+
+.header-container nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	font-size: 1.6rem;
+}
+
+.header-container nav a {
+	margin-right: 20px;
+	color: #FF6347;
+	text-decoration: none;
+}
+
+footer {
+	display: flex;
+}
+
+.footer-container nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	font-size: 1.6rem;
+}
+
+.footer-container nav a {
+	margin-right: 20px;
+	color: #FF6347;
+	text-decoration: none;
+}
+
+h1 {
+	display:flex;
+	font-family: 'Satisfy', cursive;
+	font-size: 7.2rem;
+	width: 125%;
+	justify-content: left;
+	margin: 5px;
+	color:#FF4301;
 }
 
 h2 {
-    font-family: 'Satisfy', cursive;
+	font-family: 'Satisfy', cursive;
+	font-size: 4.8rem;
+	color: #FA7D09;
 }
 
+.about {
+	text-align: center;
+}
 p {
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+.blog-container {
+	display: flex;
+}
+
+.thechef {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	display: block;
+	padding: 5%;
+}
+
+.blog {
+	text-align: center;
+	width:42%;
+}
+
+.blogbooks {
+	width: 50%;
+	border-radius: 5px;
+	margin: 20px;
+	
 }
