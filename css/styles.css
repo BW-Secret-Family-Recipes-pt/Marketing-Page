@@ -89,24 +89,29 @@ html {
 
 }
 
-/* header {
+header {
 	display: flex;
 	width: 100%;
-} */
+}
 
 /* .logo {
 	display: flex;
 } */
 
-/* div.logo {
+div.header-container nav {
+
 	width: 100%;
-} */
-/* 
+}
+
 div.header-container {
-	width: 20%;
-	margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: auto;
+	width: 50em;
 	
-} */
+
+	
+}
 
 
 .header-container nav {
@@ -114,14 +119,21 @@ div.header-container {
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	font-size: 1.6rem;
-	
+	margin: 0;
+	height: 1.5em;
 }
 
 .header-container nav a {
-	/* margin-right: 1em; */
+	margin-left: .5em;
+	margin-right: .5em;
 	color:#FA7D09;
 	text-decoration: none;
 }
+
+/* .navlink a {
+	margin: .25em;
+} */
+
 
 .header-container nav a:hover {
 	/* margin-right: 20px; */
@@ -134,6 +146,7 @@ div.header-container {
 
 footer {
 	display: flex;
+	margin-top: 8%;
 	
 
 }
@@ -146,13 +159,13 @@ footer {
 }
 
 .footer-container nav a {
-	/* margin-right: 20px; */
+	margin-right: 20px;
 	color: #FF6347;
 	text-decoration: none;
 }
 
 .footer-container nav a:hover {
-	/* margin-right: 20px; */
+	margin-right: 20px;
 	color:#FF4301;
 	font-weight: bold;
 	text-decoration: none;
@@ -162,10 +175,12 @@ h1 {
 	display:flex;
 	font-family: 'Satisfy', cursive;
 	font-size: 7.2rem;
-	
-	justify-content: left;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
 	margin: 0;
 	color:#FF4301;
+	flex-flow: wrap;
 }
 
 
@@ -189,8 +204,7 @@ p {
 
 section.blog-container {
 	display: flex;
-	
-	
+		
 }
 
 .thechef {
@@ -224,15 +238,101 @@ div.leftside {
 span.copyright {
 	color: brown;
 	display: block;
-	float: right;
-	/* width: 33%;
-	padding-left: 25%; */
+	
+	width: 33%;
+	padding-left: 25%;
 }
 
 img.blogbooks {
-	
 	height: 39em;
 	width: 56em;
+}
+
+@media (max-width: 1024px) {
+	header {
+		display: flex;
+	}
+
+	h1 {
+		display: flex;
+		width: 150%;
+		margin: 0;
+	}
+	
+	div.logo {
+		width: 350%;
+		display: flex;
+		/* justify-content: center; */
+		text-align: center;
+	}
+
+	div.header-container {
+		width: 50%;
+		margin: 0;
+		
+	}
+
+	div.header-container nav {
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		margin: 0;
+		height: 7em;
+		align-items: stretch;
+		
+	}
+
+	.header-container div.navlink {
+		display: flex;
+		
+		flex-flow: reverse;
+	}
+
+	
+
+	.blog-container {
+		display: flex;
+		flex-flow: column-reverse
+	}
+
+	img.blogbooks {
+		width: 75%;
+		height: 75%;
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		padding: 5%;
+		border-radius: 2em;
+	}
+
+	img.thechef {
+		width: 75%;
+		margin: auto;
+		padding: 0;
+		display: flex;
+		padding: 5%;
+		border-radius: 2em;
+		
+	}
+
+	div.footer-container nav {
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		margin: 0;
+	}
+
+	span.copyright {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-end;
+		text-align: right;
+		margin: 0;
+	}
+
 }
 
 @media (max-width: 800px) {
