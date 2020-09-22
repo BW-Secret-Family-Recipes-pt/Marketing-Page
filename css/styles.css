@@ -218,6 +218,7 @@ section.blog-container {
 
 aside {
 	display: flex;
+	justify-content: center;
 }
 
 .teamphotos {
