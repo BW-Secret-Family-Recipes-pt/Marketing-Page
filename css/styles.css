@@ -244,7 +244,7 @@ div.leftside {
 }
 
 .blogbooks {
-	width: 50%;
+	
 	border-radius: 5px;
 	margin: 20px;
 	
@@ -259,8 +259,9 @@ span.copyright {
 }
 
 img.blogbooks {
-	height: 39em;
-	width: 56em;
+	height: 512px;
+	width: 512px;
+	flex-shrink: 0;
 }
 
 @media (max-width: 1024px) {
