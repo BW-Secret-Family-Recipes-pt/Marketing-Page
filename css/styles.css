@@ -216,6 +216,21 @@ section.blog-container {
 	padding: 5%;
 }
 
+.teamphotos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+	
+	
+}
+
+.profilephoto {
+	height: 320px;
+	width: 320px;
+	
+}
+
 .blog {
 	text-align: center;
 	/* width:100%; */
@@ -238,8 +253,8 @@ div.leftside {
 span.copyright {
 	color: brown;
 	display: block;
+	margin-left: auto;
 	
-	width: 33%;
 	padding-left: 25%;
 }
 
