@@ -216,6 +216,10 @@ section.blog-container {
 	padding: 5%;
 }
 
+aside {
+	display: flex;
+}
+
 .teamphotos {
 	display: flex;
 	flex-flow: row wrap;
