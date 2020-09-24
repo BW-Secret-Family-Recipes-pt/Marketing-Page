@@ -235,6 +235,9 @@ aside {
   width: 320px;
 }
 
+figcaption {
+  color: #FA7D09;
+}
 
 .blog {
   text-align: center;
