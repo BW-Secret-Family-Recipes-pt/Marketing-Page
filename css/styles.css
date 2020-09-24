@@ -1,433 +1,565 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+
+/*
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*/
+
+/*
+
+Color Schemes:
+
+Brown #2F2519
+Grey #4A3F35
+PumpkinOrange #FA7D09
+OrangeRed #FF4301
+
+
+Fonts:
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+
+
+*/
 
 * {
-
-	font-family: 'Montserrat', sans-serif;
-	/* border: .0625em solid black; */
-	background-color:#FEEFD1;
-
-	
+  font-family: "Montserrat", sans-serif;
+  /* border: .0625em solid black; */
+  background-color: #feefd1;
 }
 
 html {
-	font-size: 62.5%;
-
+  font-size: 62.5%;
 }
 
 header {
-	display: flex;
-	width: 100%;
+  display: flex;
+  width: 100%;
 }
 
-/* .logo {
-	display: flex;
-} */
+ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  font-size: 1.6rem;
+}
 
 div.header-container nav {
-
-	width: 100%;
+  width: 100%;
 }
 
 div.header-container {
-	display: flex;
-	justify-content: space-evenly;
-	margin-left: auto;
-	width: 50em;
-	
-
-	
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  width: 50em;
 }
 
-
 .header-container nav {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-	font-size: 1.6rem;
-	margin: 0;
-	height: 1.5em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  margin: 0;
+  height: 1.5em;
 }
 
 .header-container nav a {
-	margin-left: .5em;
-	margin-right: .5em;
-	color:#FA7D09;
-	text-decoration: none;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: #fa7d09;
+  text-decoration: none;
 }
 
-/* .navlink a {
-	margin: .25em;
-} */
 
 
 .header-container nav a:hover {
-	/* margin-right: 20px; */
-	color:#FF4301;
-	font-weight: bold;
-	text-decoration: none;
+  /* margin-right: 20px; */
+  color: #ff4301;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-
-
 footer {
-	display: flex;
-	margin-top: 8%;
-	
-
+  display: flex;
+  margin-top: 8%;
 }
 
 .footer-container nav {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-end;
-	font-size: 1.4rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 1.4rem;
 }
 
 .footer-container nav a {
-	margin-right: 20px;
-	color: #FF6347;
-	text-decoration: none;
+  margin-right: 20px;
+  color: #ff6347;
+  text-decoration: none;
 }
 
 .footer-container nav a:hover {
-	margin-right: 20px;
-	color:#FF4301;
-	font-weight: bold;
-	text-decoration: none;
+  margin-right: 20px;
+  color: #ff4301;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 h1 {
-	display:flex;
-	font-family: 'Satisfy', cursive;
-	font-size: 7.2rem;
-	width: 100%;
-	justify-content: center;
-	text-align: center;
-	margin: 0;
-	color:#FF4301;
-	flex-flow: wrap;
+  display: flex;
+  font-family: "Satisfy", cursive;
+  font-size: 7.2rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  color: #ff4301;
+  flex-flow: wrap;
 }
 
-
+.home-content h2 {
+  display: flex;
+  justify-content: center;
+}
 
 h2 {
-	font-family: 'Satisfy', cursive;
-	font-size: 4.8rem;
-	color: #FA7D09;
+  font-family: "Satisfy", cursive;
+  font-size: 4.8rem;
+  color: #fa7d09;
 }
 
 .subtitle {
-	text-align: center;
+  text-align: center;
 }
 p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.6rem;
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 section.blog-container {
-	display: flex;
-		
+  display: flex;
 }
 
 .thechef {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	display: block;
-	padding: 5%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: block;
+  padding: 5%;
+}
+
+.cookingbanner {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: block;
+  padding: .25%;
+  box-shadow: black;
+  border: 1em solid #4A3F35;
 }
 
 aside {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .teamphotos {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	text-align: center;
-	margin: auto;
-	
-}
-
-div.teamphotos {
-	display: flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
 
 .profilephoto {
-	height: 320px;
-	width: 320px;
-	
+  height: 320px;
+  width: 320px;
 }
 
+
 .blog {
-	text-align: center;
-	/* width:100%; */
-	margin: 1%;
+  text-align: center;
+  /* width:100%; */
+  margin: 1%;
 }
 
 div.leftside {
-	overflow-x: auto;
-	overflow-y: auto;
-	height: 50em;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 50em;
 }
 
 .blogbooks {
-	
-	border-radius: 5px;
-	margin: 20px;
-	
+  border-radius: 5px;
+  margin: 20px;
 }
 
 span.copyright {
-	color: brown;
-	display: block;
-	margin-left: auto;
-	
-	padding-left: 25%;
+  color: brown;
+  display: block;
+  margin-left: auto;
+
+  padding-left: 25%;
 }
 
 img.blogbooks {
-	height: 512px;
-	width: 512px;
-	flex-shrink: 0;
+  height: 512px;
+  width: 512px;
+  flex-shrink: 0;
+}
+
+div.contact { 
+  border-radius: 5px;
+  background-color: #4a3f35;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+}
+
+label {
+  color: #FA7D09;
+  background: #4a3f35;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #fa7d09;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #ff4301;
+}
+
+textarea {
+	width:100%;
+	box-sizing:border-box;
+	direction:ltr;
+	display:block;
+	max-width:100%;
+	line-height:1.5;
+	padding:15px 15px 30px;
+	border-radius:3px;
+	border:1px solid #F7E98D;
+	font:13px Tahoma, cursive;
+	transition:box-shadow 0.5s ease;
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  resize: none;
+  background: #feefd1;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 @media (max-width: 1024px) {
-	header {
-		display: flex;
-	}
+  header {
+    display: flex;
+  }
 
-	h1 {
-		display: flex;
-		width: 150%;
-		margin: 0;
-	}
-	
-	div.logo {
-		width: 350%;
-		display: flex;
-		/* justify-content: center; */
-		text-align: center;
-	}
+  h1 {
+    display: flex;
+    width: 150%;
+    margin: 0;
+  }
 
-	div.header-container {
-		width: 50%;
-		margin: 0;
-		
-	}
+  div.logo {
+    width: 350%;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+  }
 
-	div.header-container nav {
-		width: 100%;
-		display: flex;
-		flex-flow: column;
-		margin: 0;
-		height: 7em;
-		align-items: stretch;
-		
-	}
+  div.header-container {
+    width: 50%;
+    margin: 0;
+  }
 
-	.header-container div.navlink {
-		display: flex;
-		
-		flex-flow: reverse;
-	}
+  div.header-container nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    height: 7em;
+    align-items: stretch;
+  }
 
-	
+  .header-container div.navlink {
+    display: flex;
 
-	.blog-container {
-		display: flex;
-		flex-flow: column-reverse
-	}
+    flex-flow: reverse;
+  }
 
-	img.blogbooks {
-		width: 75%;
-		height: 75%;
-		display: flex;
-		justify-content: center;
-		margin: auto;
-		padding: 5%;
-		border-radius: 2em;
-	}
+  .blog-container {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 
-	img.thechef {
-		width: 75%;
-		margin: auto;
-		padding: 0;
-		display: flex;
-		padding: 5%;
-		border-radius: 2em;
-		
-	}
+  img.blogbooks {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    border-radius: 2em;
+  }
 
-	div.footer-container nav {
-		width: 100%;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-start;
-		margin: 0;
-	}
+  img.thechef {
+    width: 75%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    padding: 5%;
+    border-radius: 2em;
+  }
 
-	span.copyright {
-		width: 100%;
-		padding: 0;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-end;
-		text-align: right;
-		margin: 0;
-	}
+  div.footer-container nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 0;
+  }
 
+  span.copyright {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0;
+  }
 }
 
 @media (max-width: 800px) {
-	header {
-		flex-flow: column;
-	}
+  header {
+    flex-flow: column;
+  }
 
-	h1 {
-		width: 100%;
-		margin: 0;
-	}
-	
-	div.logo {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		text-align: center;
-	}
+  h1 {
+    width: 100%;
+    margin: 0;
+  }
 
-	div.header-container {
-		width: 100%;
-	}
+  h2 {
+   
+    text-align: center;
+  }
 
-	div.header-container nav {
-		width: 100%;
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-	}
+  div.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
-	.blog-container {
-		display: flex;
-		flex-flow: column-reverse
-	}
+  div.header-container {
+    width: 100%;
+  }
 
-	img.blogbooks {
-		width: 75%;
-		height: 75%;
-		display: flex;
-		justify-content: center;
-		margin: auto;
-		padding: 5%;
-		border-radius: 2em;
-	}
+  div.header-container nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 
-	img.thechef {
-		width: 75%;
-		margin: auto;
-		padding: 0;
-		display: flex;
-		padding: 5%;
-		border-radius: 2em;
-		
-	}
+  .blog-container {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 
-	div.footer-container nav {
-		width: 100%;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-start;
-		margin: 0;
-	}
+  img.blogbooks {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    border-radius: 2em;
+  }
 
-	span.copyright {
-		width: 100%;
-		padding: 0;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-end;
-		text-align: right;
-		margin: 0;
-	}
+  img.cookingbanner {
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    padding: .25%;
+    box-shadow: black;
+    border: .5em solid #4A3F35;
+    width: 85%;
+    height: 85%;
+  }
 
+
+ 
+
+  div.footer-container nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  span.copyright {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0;
+  }
 }
 
-
-
 @media (max-width: 500px) {
-	header {
-		flex-flow: column;
-	}
+  header {
+    flex-flow: column;
+  }
 
-	h1 {
-		width: 100%;
-		margin: 0;
-	}
-	
-	div.logo {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		text-align: center;
-	}
+  h1 {
+    width: 100%;
+    margin: 0;
+  }
 
-	div.header-container {
-		width: 100%;
-	}
+  h2 {
+   
+    text-align: center;
+  }
 
-	div.header-container nav {
-		width: 100%;
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-	}
+  div.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
-	.blog-container {
-		display: flex;
-		flex-flow: column-reverse
-	}
+  div.header-container {
+    width: 100%;
+  }
 
-	img.blogbooks {
-		width: 75%;
-		height: 75%;
-		display: flex;
-		justify-content: center;
-		margin: auto;
-		padding: 5%;
-		border-radius: 2em;
-	}
+  div.header-container nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 
-	img.thechef {
-		width: 75%;
-		margin: auto;
-		padding: 0;
-		display: flex;
-		padding: 5%;
-		border-radius: 2em;
-		
-	}
+  .blog-container {
+    display: flex;
+    flex-flow: column-reverse;
+  }
 
-	div.footer-container nav {
-		width: 100%;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-start;
-		margin: 0;
-	}
+  img.cookingbanner {
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    padding: .25%;
+    box-shadow: black;
+    border: .5em solid #4A3F35;
+    width: 85%;
+    height: 85%;
+  }
 
-	span.copyright {
-		width: 100%;
-		padding: 0;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: flex-end;
-		text-align: right;
-		margin: 0;
-	}
+  img.blogbooks {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    border-radius: 2em;
+  }
 
+ 
+  div.footer-container nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  span.copyright {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0;
+  }
 }
