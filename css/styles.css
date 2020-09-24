@@ -99,6 +99,22 @@ ul {
   font-size: 1.6rem;
 }
 
+.leftside ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+
 div.header-container nav {
   width: 100%;
 }
